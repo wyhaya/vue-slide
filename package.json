@@ -2,19 +2,20 @@
   "name": "vue-slide",
   "version": "0.0.0",
   "description": "Vue slide component",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "dev": "parcel ./example/index.html",
-    "clear": "rm -rf ./dist && rm -rf ./.cache",
+    "clear": "rm -rf ./dist && rm -rf ./.cache && rm -rf ./lib",
     "test": "",
     "fix": "prettier --write \"./src/**/*\" \"./example/**/*\" ",
-    "build": "yarn clear"
+    "build": "yarn clear && rollup -c && cp ./src/index.css ./lib"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.3.1",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3",
-    "sass": "^1.15.2",
+    "rollup": "^0.68.2",
+    "rollup-plugin-vue": "^4.3.2",
     "vue": "^2.5.21",
     "vue-hot-reload-api": "^2.3.1",
     "vue-template-compiler": "^2.5.21"

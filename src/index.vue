@@ -28,6 +28,7 @@
 </template>
 
 <script>
+require('./index.css')
 export default {
     props: {
         data: {
@@ -179,46 +180,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-.vue-slide {
-    overflow: hidden;
-    position: relative;
-    .content {
-        display: flex;
-        width: 300%;
-        touch-action: none;
-        & > div {
-            width: 33.33333%;
-            position: relative;
-            &:first-child {
-                margin-left: -33.33333%;
-            }
-        }
-        img {
-            width: 100%;
-        }
-    }
-    .spot {
-        width: 100%;
-        position: absolute;
-        bottom: 20px;
-        display: flex;
-        justify-content: center;
-        div {
-            width: 6px;
-            height: 6px;
-            border: 1px solid #fff;
-            border-radius: 50%;
-            margin: 0 4px;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-            transition: width 0.2s linear;
-            &.cur {
-                width: 12px;
-                border-radius: 6px;
-                background-color: #fff;
-            }
-        }
-    }
-}
-</style>

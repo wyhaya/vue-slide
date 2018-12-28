@@ -1,0 +1,41 @@
+.vue-slide {
+    overflow: hidden;
+    position: relative;
+}
+.vue-slide .content {
+    display: flex;
+    width: 300%;
+    touch-action: none;
+}
+.vue-slide .content > div {
+    width: 33.33333%;
+    position: relative;
+}
+.vue-slide .content > div:first-child {
+    margin-left: -33.33333%;
+}
+.vue-slide .content img {
+    display: block;
+    width: 100%;
+}
+.vue-slide .spot {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.vue-slide .spot > div {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    transition: width 0.2s linear;
+}
+.vue-slide .spot > div.cur {
+    width: 12px;
+    border-radius: 6px;
+    background-color: #fff;
+}
