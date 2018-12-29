@@ -12,7 +12,7 @@
             @transitionend="transitionEnd"
         >
             <div><img :src="prevItem" /></div>
-            <div><img :src="data[cur]" @click="$emit('onClick', cur)" /></div>
+            <div><img :src="data[cur]" @click="$emit('click', cur)" /></div>
             <div><img :src="nextItem" /></div>
         </div>
         <div v-if="spot" class="spot">
@@ -117,7 +117,6 @@ export default {
         },
         touchEnd() {
             this.setTimer()
-            // 判断这个状态 证明 是滑动了轮播而不是上下滚动
             if (!this.touch.direction) return
 
             // 接触的时间
@@ -130,7 +129,7 @@ export default {
                 this.transition = this.speed * 0.8
                 this.slideX = 0
             } else {
-                // 判断距离不等于0 防止点击时滑动
+                // 防止点击时滑动
                 if (this.slideX !== 0) {
                     this.slideX > 0 ? this.prev() : this.next()
                 }
@@ -157,16 +156,16 @@ export default {
                     } else {
                         cur = this.cur - 1
                     }
-                    this.$emit('onPrev', cur)
+                    this.$emit('prev', cur)
                 } else {
                     if (this.cur !== this.data.length - 1) {
                         cur = this.cur + 1
                     }
-                    this.$emit('onNext', cur)
+                    this.$emit('next', cur)
                 }
             }
             if (this.cur !== cur) {
-                this.$emit('onChange', cur)
+                this.$emit('change', cur)
             }
             this.transition = 0
             this.slideX = 0

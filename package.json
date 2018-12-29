@@ -1,14 +1,12 @@
 {
   "name": "vue-slide",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Vue slide component",
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "scripts": {
     "dev": "parcel ./example/index.html",
-    "clear": "rm -rf ./dist && rm -rf ./.cache && rm -rf ./lib",
-    "test": "",
     "fix": "prettier --write \"./src/**/*\" \"./example/**/*\" ",
-    "build": "yarn clear && rollup -c && cp ./src/index.css ./lib"
+    "build": "node build.js"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.3.1",

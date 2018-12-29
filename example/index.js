@@ -14,16 +14,16 @@ new Vue({
                 clockwise: true
             },
             on: {
-                onClick(i){
+                click(i) {
                     console.log('click', i)
                 },
-                onChange(i) {
+                change(i) {
                     console.log('change', i)
                 },
-                onNext(i) {
+                next(i) {
                     console.log('next', i)
                 },
-                onPrev(i) {
+                prev(i) {
                     console.log('prev', i)
                 }
             }
