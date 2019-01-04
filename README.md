@@ -21,7 +21,7 @@ yarn add @wyhaya/vue-slide
 </template>
 
 <script>
-import slide from 'vue-slide'
+import slide from '@wyhaya/vue-slide'
 export default {
     data() {
         return {
@@ -41,7 +41,7 @@ export default {
 | `:time`        | `number`        | `3000ms`       | Timed scrolling time                         |
 | `:spot`        | `boolean`       | `true`         | Whether to display the index                 |
 | `:speed`       | `number`        | `300ms`        | Transition speed                             |
-| `:type`        | `ease \| linear \| ease-in \| ...more` | `ease` | Transition mode               |
+| `:type`        | `ease \| linear \| ease-in \| ...` | `ease` | Transition mode               |
 | `:clockwise`   | `boolean`       | `true`         | Whether to scroll clockwise                  |
 | `@click`       | `(index: number) => void` | `-`  | Callback function after clicking             |
 | `@change`      | `(index: number) => void` | `-`  | Change the callback function after the index |
