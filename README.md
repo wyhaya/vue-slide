@@ -2,7 +2,7 @@
 
 Vue carousel component for mobile
 
-![1](https://user-images.githubusercontent.com/23690145/50532524-5c4a2700-0b55-11e9-9ea8-b8b4aa1911ae.gif)
+![slide](https://user-images.githubusercontent.com/23690145/50960304-0cc60c80-1500-11e9-8feb-e6961b46e163.gif)
 
 
 ### Install
