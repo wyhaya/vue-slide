@@ -28,6 +28,6 @@ nwePackage.repository = package.repository
 nwePackage.author = package.author
 nwePackage.license = package.license
 
-fs.writeFileSync('./vue-slide/package.json', JSON.stringify(nwePackage))
+fs.writeFileSync('./vue-slide/package.json', JSON.stringify(nwePackage, null, 4))
 
 

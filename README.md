@@ -33,7 +33,7 @@ export default {
 </script>
 ```
 
-### API
+### Interface
 
 | Props        | Type                   | Default   | Explain                                      |
 | -------------  | -------------   | -------------  | -------------                                |
@@ -48,7 +48,7 @@ export default {
 | `@prev`        | `(index: number) => void` | `-`  | Callback function after index forward        |
 | `@next`        | `(index: number) => void` | `-`  | Callback function after index backwards      |
 
-### More
 
-* [React slide component](https://github.com/wyhaya/react-slide)
-* [Slide without frame](https://github.com/wyhaya/slide)
+### License
+
+[MIT](./LICENSE) LICENSE
