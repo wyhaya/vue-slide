@@ -5,7 +5,6 @@
 .vue-slide .content {
     display: flex;
     width: 300%;
-    touch-action: none;
 }
 .vue-slide .content > div {
     width: 33.33333%;
