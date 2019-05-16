@@ -1,6 +1,6 @@
 {
   "name": "vue-slide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue slide component",
   "main": "./index.js",
   "scripts": {
@@ -9,14 +9,18 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.3.1",
-    "parcel-bundler": "^1.11.0",
-    "prettier": "^1.15.3",
-    "rollup": "^0.68.2",
-    "rollup-plugin-vue": "^4.3.2",
-    "vue": "^2.5.21",
-    "vue-hot-reload-api": "^2.3.1",
-    "vue-template-compiler": "^2.5.21"
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@vue/component-compiler-utils": "^3.0.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.1",
+    "rollup": "^1.12.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-template-compiler": "^2.6.10"
   },
   "keywords": [
     "vue",

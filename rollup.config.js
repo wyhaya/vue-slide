@@ -1,6 +1,8 @@
 
 
 import VuePlugin from 'rollup-plugin-vue'
+import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs' 
 
 process.env.NODE_ENV = 'production'
 
@@ -11,8 +13,11 @@ export default {
         format: 'cjs'
     },
     plugins: [
-        VuePlugin()
+        commonjs(),
+        VuePlugin(),
+        babel({
+            extensions: ['.js', '.vue'],
+        })
     ]
 }
-
 
